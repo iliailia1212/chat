@@ -5,7 +5,7 @@ define(['jquery', 'socket', 'functions', 'EventEmitter','multiplex', 'bootstrap'
     var socket_room, room, reconnect = 0, auth_socket_global;
     start();
     function start() {
-        var socket = SockJS('http://192.168.1.116:377/chat');
+        var socket = SockJS('http://localhost/chat');
         var multiplexer = new WebSocketMultiplex(socket);
         var auth_socket = multiplexer.channel('auth');
         auth_socket_global = auth_socket;
