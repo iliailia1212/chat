@@ -11,3 +11,5 @@
 npm install gulp-sass@2
 
 4)gulp
+
+5)Веб сервер работает по адрессу: http://localhost:3000/
