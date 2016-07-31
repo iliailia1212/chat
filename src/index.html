@@ -1,0 +1,97 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <!--
+    <script src="javascripts/jquery-3.0.0.min.js"></script>
+    <script src="javascripts/bootstrap.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <script src="javascripts/functions.js"></script>
+    <script src="javascripts/script.js"></script>
+    <script src="javascripts/server.js"></script>
+    <script src="javascripts/moment.min.js"></script>
+    -->
+    <script data-main="js/application.js" src="js/require.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="panel panel-primary">
+            <div class="panel-heading container-fluid">
+                <div class="col-xs-2">
+                    <h3 class="panel-title">Пользователи</h3>
+                </div>
+                <div class="col-xs-8">
+                    <h3 class="panel-title">
+                        Чат
+                        <div class="btn-group pull-right set_color" data-toggle="buttons">
+                            <label class="btn btn-primary active"><input type="radio" name="options" data-id="primary" autocomplete="off" checked></label>
+                            <label class="btn btn-primary"><input type="radio" name="options" data-id="success" autocomplete="off"></label>
+                            <label class="btn btn-primary"><input type="radio" name="options" data-id="info" autocomplete="off"></label>
+                            <label class="btn btn-primary"><input type="radio" name="options" data-id="warning" autocomplete="off"></label>
+                            <label class="btn btn-primary"><input type="radio" name="options" data-id="danger" autocomplete="off"></label>
+                        </div>
+                    </h3>
+                </div>
+                <div class="col-xs-2">
+                    <h3 class="panel-title">Команаты
+                        <button type="button" class="btn btn-success add_group">+</button>
+                    </h3>
+                </div>
+            </div>
+            <div class="panel-body chat-body">
+                <div class="col-xs-2 list-group list-users">
+                </div>
+                <div class="col-xs-8 container-fluid chat-list">
+                    <div class="table-div">
+                        <table class="table">
+                            <tbody class="list-messages">
+                                <tr><td class="full">Выбирите комнату, что бы начать общаться</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="form">
+                        <div class="input-group">
+                             <input type="text" class="form-control" disabled>
+                             <span class="input-group-btn"><button class="btn btn-default mess_send" type="button" disabled>Отправить</button></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-2 list-group list-rooms">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <div class="modal fade connect_modal">
+     <div class="modal-dialog">
+         <div class="modal-content">
+             <div class="modal-body">
+                Подключение к серверу...
+             </div>
+         </div>
+     </div>
+ </div>
+ <div class="modal fade auth_modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Введите ник</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <label for="inputName" class="col-sm-2 control-label">Ваш ник:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control inputName" placeholder="Ник">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Войти</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
